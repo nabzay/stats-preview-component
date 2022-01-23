@@ -140,6 +140,9 @@ body {
 
 /* Desktop Styles */
 @media screen and (min-width: 64em) {
+  body {
+    padding: 4em;
+  }
   .card {
     display: grid;
     grid-template-columns: 1.06fr 1fr;
