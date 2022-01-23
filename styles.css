@@ -174,8 +174,14 @@ body {
   }
 
   .card__content .card__stats {
+    display: flex;
     flex-direction: row;
     gap: 4.2em;
     justify-content: flex-start;
+  }
+
+  .card__content .card__stats > div {
+    /* Remove mobile margins */
+    margin-bottom: 0;
   }
 }
