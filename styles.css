@@ -99,6 +99,7 @@ body {
   background-size: cover;
   height: 16em;
   width: 100%;
+
   position: relative;
 }
 
@@ -127,7 +128,11 @@ body {
 
 .card__content .card__stats {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   justify-content: center;
   flex-direction: column;
+}
+
+.card__stats .value {
+  margin-bottom: 0.29em;
 }
