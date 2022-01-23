@@ -127,11 +127,8 @@ body {
   margin-bottom: 2.67em;
 }
 
-.card__content .card__stats {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
-  flex-direction: column;
+.card__stats > div:nth-child(-n + 2) {
+  margin-bottom: 1.6em;
 }
 
 .card__stats .value {
