@@ -108,7 +108,11 @@ body {
 
 .card .card__image::before {
   content: "";
-  inset: 0;
+  /* inset: 0; */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   background-color: hsl(277, 64%, 61%);
   position: absolute;
   mix-blend-mode: multiply;
