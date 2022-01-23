@@ -143,14 +143,14 @@ body {
 /* Desktop Styles */
 @media screen and (min-width: 64em) {
   .card {
-    display: flex;
-    flex-direction: row-reverse;
-    max-width: 1110px;
+    display: grid;
+    grid-template-columns: 1.06fr 1fr;
+    max-width: 74em;
   }
 
-  .card .card__image {
-    flex: 1;
+  .card > .card__image {
     height: auto;
+    order: 2;
   }
 
   .card .card__image::before {
@@ -158,20 +158,25 @@ body {
   }
 
   .card .card__content {
-    flex: 1;
+    order: 1;
     text-align: left;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 72px 72px 59px 72px;
+  }
+
+  .card .card__content .card__body {
+    margin-bottom: 4.8em;
+    max-width: 25em;
+  }
+
+  .card .card__heading {
+    font-size: var(--fs-heading__800);
+    line-height: 1.22em;
+    margin-bottom: 0.694em;
   }
 
   .card__content .card__stats {
     flex-direction: row;
-    text-align: center;
-    gap: 4.267em;
-  }
-
-  .card__content .card__body {
-    /* max-width: 30em; */
+    gap: 5em;
+    justify-content: flex-start;
   }
 }
